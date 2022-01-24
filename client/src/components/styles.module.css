@@ -1,0 +1,129 @@
+.drag, .drop, .results, .values {
+    color: white;
+}
+
+.drag, .drop {
+    height: 37vh;
+    padding-top: 0.5em;
+    background-color: #23272A;
+    margin: 1em 0;
+}
+
+.drop {
+    height: 30vh;
+}
+
+.intinp {
+    width: 2em;
+    height: 1.5em;
+}
+
+.evalRes p {
+    margin: 0;
+}
+
+.valInd {
+    background-color: #5663F7;
+    padding: 0.3em;
+    width: 4em;
+    margin: 0.2em;
+    border-radius: 6px;
+}
+
+.evalRes .success{
+    color: #4BCA81;
+}
+
+.evalRes .failure{
+    color: rgb(245, 40, 40);
+}
+
+.results {
+    text-align: center;
+    height: 24vh;
+    width: 100%;
+    padding-top: 0.5em;
+    background-color: #23272A;
+    margin: 1em 0;
+}
+
+.results button {
+    background-color: #5663F7;
+}
+
+.evalRes {
+    margin-top: 1em;
+}
+
+.results button:hover {
+    background-color: #5865F2;
+}
+
+.values {
+    background-color: #404EED;
+    height: 95vh;
+    margin: 1em 0;
+}
+
+.values {
+    text-align: center;
+    padding: 1em;
+}
+
+.values h3 {
+    margin-bottom: 1em;
+}
+
+.values button {
+    margin-top: 2em;
+    background-color: #99AAB5;
+}
+
+.values button:hover {
+    background-color: #23272A;
+}
+
+.values input {
+    height: 1em;
+    width: 2.5em;
+    background-color: #F6F6F6;
+    border: 0;
+}
+
+.drop .closebtn {
+    position: absolute;
+    margin-top: -1em;
+    margin-left: 0.5em;
+}
+
+.card {
+    font-weight: 600;
+    width: 6%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.letter {
+    background-color: #EB459E;
+    color: white;
+}
+
+.opert {
+    background-color: #FEE75C;
+    color: #582812;
+}
+
+.comp {
+    background-color: #582812;
+    color: white;
+}
+
+.input {
+    background-color: #57F287;
+    color: #582812;
+}
+
+.mymargin {
+    margin: 1em 0.5em;
+}
