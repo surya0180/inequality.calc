@@ -1,10 +1,270 @@
-import axios from 'axios'
+import axios from "axios";
 
-export const getValues = async () => {
-    try {
-        const result = await axios.get('https://inequality-dnd.herokuapp.com/api/values')
-        return { status: 'success', payload: result.data }
-    } catch (error) {
-        return { status: 'failure' }
-    }
-}
+export const getValues = () => {
+  return [
+    {
+      id: 1,
+      type: "letter",
+      letter: "A",
+      value: 7,
+    },
+    {
+      id: 2,
+      type: "letter",
+      letter: "B",
+      value: 3,
+    },
+    {
+      id: 3,
+      type: "letter",
+      letter: "C",
+      value: 8,
+    },
+    {
+      id: 4,
+      type: "letter",
+      letter: "D",
+      value: 6,
+    },
+    {
+      id: 5,
+      type: "letter",
+      letter: "E",
+      value: 9,
+    },
+    {
+      id: 6,
+      type: "letter",
+      letter: "F",
+      value: 4,
+    },
+    {
+      id: 7,
+      type: "letter",
+      letter: "G",
+      value: 9,
+    },
+    {
+      id: 8,
+      type: "letter",
+      letter: "H",
+      value: 4,
+    },
+    {
+      id: 9,
+      type: "letter",
+      letter: "I",
+      value: 2,
+    },
+    {
+      id: 10,
+      type: "letter",
+      letter: "J",
+      value: 2,
+    },
+    {
+      id: 11,
+      type: "letter",
+      letter: "K",
+      value: 9,
+    },
+    {
+      id: 12,
+      type: "letter",
+      letter: "L",
+      value: 4,
+    },
+    {
+      id: 13,
+      type: "letter",
+      letter: "M",
+      value: 4,
+    },
+    {
+      id: 14,
+      type: "letter",
+      letter: "N",
+      value: 0,
+    },
+    {
+      id: 15,
+      type: "letter",
+      letter: "O",
+      value: 6,
+    },
+    {
+      id: 16,
+      type: "letter",
+      letter: "P",
+      value: 3,
+    },
+    {
+      id: 17,
+      type: "letter",
+      letter: "Q",
+      value: 9,
+    },
+    {
+      id: 18,
+      type: "letter",
+      letter: "R",
+      value: 6,
+    },
+    {
+      id: 19,
+      type: "letter",
+      letter: "S",
+      value: 0,
+    },
+    {
+      id: 20,
+      type: "letter",
+      letter: "T",
+      value: 7,
+    },
+    {
+      id: 21,
+      type: "letter",
+      letter: "U",
+      value: 5,
+    },
+    {
+      id: 22,
+      type: "letter",
+      letter: "V",
+      value: 7,
+    },
+    {
+      id: 23,
+      type: "letter",
+      letter: "W",
+      value: 9,
+    },
+    {
+      id: 24,
+      type: "letter",
+      letter: "X",
+      value: 9,
+    },
+    {
+      id: 25,
+      type: "letter",
+      letter: "Y",
+      value: 5,
+    },
+    {
+      id: 26,
+      type: "letter",
+      letter: "Z",
+      value: 4,
+    },
+    {
+      id: 27,
+      type: "number",
+      letter: "1",
+      value: 1,
+    },
+    {
+      id: 28,
+      type: "number",
+      letter: "2",
+      value: 2,
+    },
+    {
+      id: 29,
+      type: "number",
+      letter: "3",
+      value: 3,
+    },
+    {
+      id: 30,
+      type: "number",
+      letter: "4",
+      value: 4,
+    },
+    {
+      id: 31,
+      type: "number",
+      letter: "5",
+      value: 5,
+    },
+    {
+      id: 32,
+      type: "number",
+      letter: "6",
+      value: 6,
+    },
+    {
+      id: 33,
+      type: "number",
+      letter: "7",
+      value: 7,
+    },
+    {
+      id: 34,
+      type: "number",
+      letter: "8",
+      value: 8,
+    },
+    {
+      id: 35,
+      type: "number",
+      letter: "9",
+      value: 9,
+    },
+    {
+      id: 36,
+      type: "number",
+      letter: "10",
+      value: 10,
+    },
+    {
+      id: 37,
+      type: "opert",
+      letter: "+",
+      value: "+",
+    },
+    {
+      id: 38,
+      type: "opert",
+      letter: "-",
+      value: "-",
+    },
+    {
+      id: 39,
+      type: "opert",
+      letter: "*",
+      value: "*",
+    },
+    {
+      id: 40,
+      type: "opert",
+      letter: "/",
+      value: "/",
+    },
+    {
+      id: 41,
+      type: "comp",
+      letter: "=",
+      value: "=",
+    },
+    {
+      id: 42,
+      type: "comp",
+      letter: "<",
+      value: "<",
+    },
+    {
+      id: 43,
+      type: "comp",
+      letter: ">",
+      value: ">",
+    },
+    {
+      id: 44,
+      type: "input",
+      letter: "Inp",
+      value: "inp",
+    },
+  ];
+};
