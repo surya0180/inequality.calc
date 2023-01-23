@@ -1,5 +1,5 @@
 # Inequality
-A basic MERN app that demonstrates inequality validation with next level features. This is done as part of internship assesment.
+A basic MERN app that demonstrates inequality validation with next level features.
 
 # Deployment
 You can find the deployment at https://inequality.netlify.app/
