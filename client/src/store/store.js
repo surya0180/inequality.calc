@@ -18,25 +18,23 @@ const valueSlice = createSlice({
         drags: action.payload,
       };
     },
+
     setDrops(state, action) {
       const src = parseInt(action.payload.s);
       const des = parseInt(action.payload.d);
+
       const id = action.payload.id;
       const obj = state.drags.filter((item) => item.id === parseInt(id));
       state.drags = state.drags.filter((item) => item.id !== parseInt(id));
-      console.log(src, des, id);
+
       if (obj[0].type !== "letter") {
         state.drags.push(obj[0]);
         state.drags.sort((a, b) => a.id - b.id);
-        console.log(current(state.drops));
         state.drops.splice(150, 1);
         state.drops.splice(des, 0, { ...obj[0], id: uuidv4() });
-        console.log(current(state.drops));
       } else {
-        console.log(current(state.drops));
         state.drops.splice(150, 1);
         state.drops.splice(des, 0, { ...obj[0] });
-        console.log(current(state.drops));
       }
     },
     setInteger(state, action) {

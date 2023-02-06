@@ -6,11 +6,12 @@ import styles from "./styles.module.css";
 
 const Drop = () => {
   const data = useSelector((state) => state.values);
+
   return (
     <Droppable droppableId="drop-here" direction="horizontal">
       {(provided) => (
         <div
-          className={"container " + styles.drop}
+          className={"container-fluid " + styles.drop}
           ref={provided.innerRef}
           {...provided.droppableProps}
         >

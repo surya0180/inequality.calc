@@ -12,6 +12,7 @@ import { valueActions } from "./store/store";
 const App = () => {
   const dispatch = useDispatch();
   const [load, setLoad] = useState(false);
+
   useEffect(() => {
     setLoad(true);
     dispatch(valueActions.setValues(getValues()));
@@ -63,12 +64,12 @@ const App = () => {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-9">
+          <div className="col-lg-9 col-md-7">
             <Drag />
             <Drop />
             <Results />
           </div>
-          <div className="col-md-3">
+          <div className="col-lg-3 col-md-5">
             <Values />
           </div>
         </div>

@@ -9,12 +9,14 @@ import styles from "./styles.module.css";
 const Entity = (props) => {
   const data = useSelector((state) => state.values);
   const dispatch = useDispatch();
+
   const changeHandler = (event) => {
     const idx = data.drops.findIndex((item) => item.id === props.id);
     dispatch(
       valueActions.setInteger({ index: idx, value: event.target.value })
     );
   };
+
   return props.type === "input" && props.action === "drop" ? (
     <input type={"number"} className={styles.intinp} onChange={changeHandler} />
   ) : (
@@ -24,6 +26,7 @@ const Entity = (props) => {
 
 const LetterCard = (props) => {
   const dispatch = useDispatch();
+
   return (
     <Draggable draggableId={props.id.toString()} index={props.index}>
       {(provided) => (

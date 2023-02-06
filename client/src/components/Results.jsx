@@ -135,7 +135,7 @@ const Results = () => {
   };
 
   return (
-    <div className={"container " + styles.results}>
+    <div className={"container-fluid " + styles.results}>
       <div className="d-flex justify-content-between">
         <button
           className="btn btn-primary shadow-none"
